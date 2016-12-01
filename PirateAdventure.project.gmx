@@ -31,6 +31,13 @@
       <sprites name="Slime">
         <sprite>sprites\spr_slime</sprite>
       </sprites>
+      <sprites name="Conscript">
+        <sprite>sprites\spr_enemy_conscript_run_right</sprite>
+        <sprite>sprites\spr_enemy_conscript_run_left</sprite>
+        <sprite>sprites\spr_enemy_conscript_idle_left</sprite>
+        <sprite>sprites\spr_enemy_conscript_idle_right</sprite>
+        <sprite>sprites\spr_enemy_conscript_hitbox</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_bullet</sprite>
@@ -83,6 +90,8 @@
       </objects>
       <objects name="Enemies">
         <object>objects\obj_enemy_slime</object>
+        <object>objects\obj_enemy_conscript</object>
+        <object>objects\obj_enemy_conscript_hitbox</object>
       </objects>
       <object>objects\obj_lifeform_parent</object>
     </objects>
@@ -102,7 +111,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\room1_new</room>
+    <room>rooms\room1_old</room>
     <room>rooms\rm_1</room>
     <room>rooms\room2</room>
     <room>rooms\ship_1</room>

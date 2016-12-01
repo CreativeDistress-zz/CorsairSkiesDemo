@@ -8,6 +8,7 @@ down_movement_input = keyboard_check(ord('S'));
 //dash_key_input = keyboard_check_pressed(vk_space);
 attack_key_input = keyboard_check_pressed(vk_space);
 switch_weapons_key = keyboard_check_pressed(vk_tab);
+spawn_enemy = mouse_check_button_pressed(mb_left);
 
 // Get the axis
 xaxis = (right_movement_input - left_movement_input); 

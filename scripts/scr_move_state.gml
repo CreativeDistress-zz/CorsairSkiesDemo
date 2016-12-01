@@ -31,6 +31,11 @@ if (switch_weapons_key)
     }
 }
 
+if (spawn_enemy)
+{
+    instance_create(mouse_x, mouse_y, obj_enemy_conscript);
+}
+
 // Get Direction
 dir = point_direction(0, 0, xaxis, yaxis);
 
