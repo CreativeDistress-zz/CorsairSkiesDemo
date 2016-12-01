@@ -34,10 +34,17 @@
     </sprites>
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_wall_right</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
     <background>background\background1</background>
+    <background>background\bare_floor</background>
+    <background>background\bare_floor_128x64</background>
+    <background>background\bare_floor_128x128</background>
+    <background>background\basic_set_1</background>
+    <background>background\cock_pit</background>
+    <background>background\spaceTiles</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -80,7 +87,9 @@
       <object>objects\obj_lifeform_parent</object>
     </objects>
     <objects name="Enviorment">
+      <object>objects\obj_wall_right</object>
       <object>objects\obj_wall</object>
+      <object>objects\obj_wall_left</object>
     </objects>
     <objects name="Misc">
       <object>objects\obj_fade_effect</object>
@@ -93,7 +102,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\rm_1</room>
+    <room>rooms\room2</room>
+    <room>rooms\ship_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
