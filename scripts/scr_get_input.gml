@@ -5,8 +5,8 @@ right_movement_input = keyboard_check(ord('D'));
 left_movement_input = keyboard_check(ord('A'));  
 up_movement_input = keyboard_check(ord('W')); ; 
 down_movement_input = keyboard_check(ord('S')); 
-dash_key_input = keyboard_check_pressed(vk_space);
-attack_key_input = mouse_check_button_pressed(mb_left);
+//dash_key_input = keyboard_check_pressed(vk_space);
+attack_key_input = keyboard_check_pressed(vk_space);
 switch_weapons_key = keyboard_check_pressed(vk_tab);
 
 // Get the axis

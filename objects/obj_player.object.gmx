@@ -44,7 +44,7 @@ image_speed = 0;
 //created the weapon object for melee
 equiped_melee = instance_create(x, y, obj_weapon_parent);
 equiped_melee.damage = 1;
-equiped_melee.attack_speed = .3;
+equiped_melee.attack_speed = .2;
 equiped_melee.upattack = spr_player_atk_up;
 equiped_melee.downattack = spr_player_atk_down;
 equiped_melee.rightattack = spr_player_atk_right;
@@ -191,7 +191,7 @@ if(state == scr_attack_state){
             <string>///Draw Shadow
 if instance_exists(obj_player)
 {
-    draw_sprite(spr_player_shadow, image_index, x, y);
+    draw_sprite(spr_player_shadow, image_index, x, y + 16);
 }
 
 draw_self();
@@ -213,9 +213,9 @@ draw_self();
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>10,12</point>
-    <point>20,12</point>
+    <point>12,26</point>
+    <point>20,26</point>
     <point>20,32</point>
-    <point>10,32</point>
+    <point>12,32</point>
   </PhysicsShapePoints>
 </object>

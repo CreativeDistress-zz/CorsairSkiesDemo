@@ -1,3 +1,9 @@
 ///scr_shoot_gun
-bulletDir = point_direction(x, y, mouse_x, mouse_y)
-instance_create(x + lengthdir_x(15 ,bulletDir), y + lengthdir_y(15, bulletDir), obj_bullet);
+if (sprite_index == spr_player_left)
+{
+    instance_create(x - 20, y, obj_bullet);
+}
+if (sprite_index == spr_player_right)
+{
+    instance_create(x + 20, y, obj_bullet);
+}

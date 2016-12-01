@@ -22,7 +22,8 @@ switch (sprite_index){
 }
 
 // Spawn the damage object based on what animation is currently playing
-if(image_index >= 3 and attacked == false){
+
+if(image_index >= 4 and attacked == false){
 
     var spawnx = 0;
     var spawny = 0;
@@ -56,3 +57,4 @@ if(image_index >= 3 and attacked == false){
     dmg_obj.damage = obj_player.equiped_melee.damage;
     attacked = true;
 }
+
